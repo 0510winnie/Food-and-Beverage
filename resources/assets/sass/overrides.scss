@@ -1,0 +1,38 @@
+.has-dropdown {
+  position: relative;
+  
+  .navbar-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+    background-color: white;
+    text-align: left;
+    box-shadow: 0 0 1px rgba(57,70,78,.15), 0 20px 55px 18px rgba(57,70,78,.25);
+    min-width: 200px;
+    
+  }
+
+  &.is-aligned-right .navbar-dropdown{
+    right: 0;
+    left: auto;
+  }
+
+  &.is-open .navbar-dropdown{
+    display: block;
+  }
+}
+
+.navbar-item img {
+  max-height: 4.5rem;
+  min-height: 2.4rem;
+}
+
+.navbar-menu {
+  height: 5rem;
+}
+
+.navbar-item {
+  font-size: large;
+}
