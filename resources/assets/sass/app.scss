@@ -5,10 +5,20 @@
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Bulma
+@import "node_modules/bulma/bulma";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// Bulma Vue Modules
+@import "node_modules/buefy/src/scss/buefy";
+
+// Above are the frameworks and the custom stuff will be placed below so can override
+// certain elements in the framework as it can take precedence.
+
+// Custom SASS Pages
+@import "overrides";
+@import "helpers";
+@import "styles";
+@import "manage";
