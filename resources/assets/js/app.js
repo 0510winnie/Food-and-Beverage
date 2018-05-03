@@ -17,5 +17,10 @@ Vue.use(Buefy);
 
 var app = new Vue({
     el: '#app',
-    data:{}
+    data:{
+      message: 'Hello World',
+      auto_password: true
+    },
+    
+
 });

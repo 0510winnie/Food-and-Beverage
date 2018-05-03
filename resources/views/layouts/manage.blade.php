@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Food and Beverage</title>
+    <title>Management - Dashboard</title>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -17,17 +18,24 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div id="app">
-       <!-- nav -->
-        @include('_includes.nav.main')
+  <body>
+        
+        @include('_includes.error.alertForForm')
+        <!-- nav -->
+          @include('_includes.nav.main')
+        <!-- side menu for management -->
+          @include('_includes.nav.manage')
+            
+      
 
-        @yield('content')
+          <div class="management-area" id="app">
+              @yield('content')
+          </div>
 
-    </div>
+          <!-- Scripts -->
+          <script src="{{ asset('js/app.js') }}" defer></script>
+          @yield('scripts')
 
-     <!-- Scripts -->
-     <script src="{{ asset('js/app.js') }}"></script>
-     @yield('scripts')
+          
 </body>
 </html>

@@ -17258,6 +17258,7 @@ label.panel-block:hover {
 
 .navbar-item {
   font-size: large;
+  font-family: -webkit-pictograph;
 }
 
 .m-t-3 {
@@ -17902,6 +17903,22 @@ label.panel-block:hover {
 
 .navbar-itme {
   font-family: serif;
+}
+
+.main {
+  width: 750px;
+}
+
+.header_title {
+  font-family: cursive;
+  color: darkgoldenrod;
+}
+
+.header_subtitle {
+  font-family: -webkit-pictograph;
+  font-weight: bold;
+  color: darkkhaki;
+  font-size: 1.85rem;
 }
 
 .management-area {

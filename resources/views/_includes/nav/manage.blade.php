@@ -4,7 +4,7 @@
 
 {{-- Side menu  --}}
 
-
+@if (Auth::check())
 <div class="wrapper">
   <div class="columns">
     <aside class="column is-2 aside m-l-35 m-t-40">
@@ -19,11 +19,10 @@
           Administration
         </p>
         <ul class="menu-list">
-          <li><a href="/bulma-admin-dashboard-template/forms.html"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Forms</a></li>
-          <li><a href="/bulma-admin-dashboard-template/ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li>
+          <li><a href=" {{ route('posts.index') }}"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Manage Posts</a></li>
+          {{-- <li><a href="/bulma-admin-dashboard-template/ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> UI Elements</a></li> --}}
           <li><a href="/bulma-admin-dashboard-template/tables.html"><span class="icon is-small"><i class="fa fa-table"></i></span> Tables</a></li>
-          <li><a href="/bulma-admin-dashboard-template/presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
-
+          {{-- <li><a href="/bulma-admin-dashboard-template/presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li> --}}
           <li>
             <a class=""><i class="fa fa-cog"></i> Manage</a>
             <ul>
@@ -39,11 +38,11 @@
         <ul class="menu-list">
           <li><a><span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages</a></li>
           <li><a><span class="icon is-small"><i class="fa fa-windows"></i></span> Extras</a></li>
-          <li><a><span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page</a></li>
+          {{-- <li><a><span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page</a></li> --}}
         </ul>
       </nav>
     </aside>
-
+@endif
     
 
 <script src="/bulma-admin-dashboard-template/dist/build.js"></script>

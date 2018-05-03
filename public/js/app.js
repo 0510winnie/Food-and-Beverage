@@ -996,7 +996,11 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
 var app = new Vue({
   el: '#app',
-  data: {}
+  data: {
+    message: 'Hello World',
+    auto_password: true
+  }
+
 });
 
 /***/ }),

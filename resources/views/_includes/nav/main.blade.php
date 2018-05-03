@@ -15,7 +15,7 @@
         <div style="font-size:1em; color:LIGHTSALMON" class="m-l-40 m-t-25">
             <i class="fa fa-map-pin fa-xs"></i>
           </div>
-      <a class="navbar-item " href="https://bulma.io/">Home</a>
+      <a class="navbar-item " href="{{route('home')}}">Home</a>
           <div style="font-size:1em; color:CORAL" class="m-l-40 m-t-25">
               <i class="fa fa-heart"></i>
             </div>
