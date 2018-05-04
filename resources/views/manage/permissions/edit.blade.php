@@ -1,20 +1,20 @@
 @extends('layouts.manage')
 
 @section('content')
-<div class="main">
+<div class="main flex-container">
   <div class="columns m-t-40">
     <div class="column">
-        <h2 class="title"><i class="fa fa-user-plus"> Edit User</i></h2>
+        <h2 class="title"><i class="fa fa-user-plus"> Edit Permission</i></h2>
     </div>
   </div>
   <hr>
-  <form action="{{ route('users.update', $user->id) }} " method="POST">
+  <form action="{{ route('permissions.update', $permission->id) }} " method="POST">
     {{ method_field('PUT') }}
     {{ csrf_field() }}
       <div class="field">
-          <label class="label">Name</label>
+          <label class="label">Display Name</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" name="name"  id="name" value="{{$user->name }}">
+            <input class="input" type="text" name="display_name"  id="display_name" value="{{$permission->display_name }}">
             <span class="icon is-small is-left">
                 <i class="fa fa-user-circle"></i>
             </span>
@@ -22,9 +22,9 @@
         </div>
         
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label">Description</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="email" name="email" id="email" value="{{$user->email }}">
+            <input class="input" type="text" name="description" id="description" value="{{$permission->description }}">
             <span class="icon is-small is-left">
               <i class="fa fa-envelope"></i>
             </span>
@@ -41,15 +41,4 @@
         </div>
   </form>
 </div> <!-- end of flex container -->
-@endsection
-
-@section('scripts')
-  <script>
-    var app = new Vue({
-      el:'#app', 
-      data: {
-        auto_password: true
-      }
-    });
-  </script>
 @endsection

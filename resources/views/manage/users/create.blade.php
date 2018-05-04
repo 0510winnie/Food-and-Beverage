@@ -1,7 +1,7 @@
 @extends('layouts.manage')
 
 @section('content')
-<div class="flex-container">
+<div class="flex-container main">
   <div class="columns m-t-40">
     <div class="column">
         <h2 class="title"><i class="fa fa-user-plus">Create New User</i></h2>
@@ -57,16 +57,16 @@
 @section('scripts')
 
 <script>
-
-var app = new Vue({
-  el: '#app',
-  data:{
-    message: 'Hello World',
-    auto_password: true
-  },
+// {{-- 
+// var app = new Vue({
+//   el: '#app',
+//   data:{
+//     message: 'Hello World',
+//     auto_password: true
+//   },
   
 
-});
+// }); --}}
 </script>
 
 @endsection

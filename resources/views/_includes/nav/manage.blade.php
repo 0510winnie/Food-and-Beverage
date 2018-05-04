@@ -28,7 +28,7 @@
             <ul>
               <li><a href=" {{ route('users.index') }}" >Users</a></li>
               <li><a>Roles</a></li>
-              <li><a>Permission</a></li>
+              <li><a href=" {{ route('permissions.index') }}">Permission</a></li>
             </ul>
           </li>
         </ul>

@@ -1,7 +1,7 @@
 @extends('layouts.manage')
 
 @section('content')
-<main class="column main m-t-40 m-r-15">
+<main class="column m-t-45 m-r-15">
   <nav class="breadcrumb is-small" aria-label="breadcrumbs">
     <ul>
       <li><a href=" {{ route('home') }} ">Home</a></li>
@@ -27,7 +27,7 @@
   <table class="table is-hoverable is-fullwidth is-bordered ">
     <thead>
       <tr>
-        <th>Id</th>
+        <th>ID</th>
         <th>Name</th>
         <th>Email</th>
         <th>Date Created</th>
@@ -42,7 +42,9 @@
           <td>{{$user->name}}</td>
           <td>{{$user->email}}</td>
           <td>{{$user->created_at->toFormattedDateString()}}</td>
-          <td><a href="{{ route('users.edit', $user->id) }}" class="button is-outlined">Edit</a></td>
+          <td><a href="{{ route('users.edit', $user->id) }}" class="button is-outlined is-info m-r-5">Edit</a>
+            <a href="{{ route('users.show', $user->id) }}" class="button is-primary is-outlined">View</a></td>
+          </td>
         </tr>
       @endforeach
   </table> <!-- end of table -->

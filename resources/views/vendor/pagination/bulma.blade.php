@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-    <nav class="pagination is-centered m-t-200">
+    <nav class="pagination is-centered m-t-90 m-b-150">
         @if ($paginator->onFirstPage())
             <a class="pagination-previous" disabled>Previous</a>
         @else

@@ -998,7 +998,10 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello World',
-    auto_password: true
+    auto_password: true,
+    permissionType: 'basic',
+    resource: '',
+    crudSelected: ['create', 'read', 'update', 'delete']
   }
 
 });

@@ -16,11 +16,14 @@ Vue.use(Buefy);
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 var app = new Vue({
-    el: '#app',
-    data:{
-      message: 'Hello World',
-      auto_password: true
-    },
-    
+  el: '#app',
+  data:{
+    message: 'Hello World',
+    auto_password: true,
+    permissionType:'basic',
+    resource: '',
+    crudSelected:['create','read','update','delete'],
+  },
+  
 
 });
